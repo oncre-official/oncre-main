@@ -49,7 +49,7 @@ function ContactPage() {
           </p>
           <h1 className="mt-3 text-4xl font-bold sm:text-5xl">Get in touch.</h1>
           <p className="mt-4 max-w-xl text-lg text-navy-foreground/70">
-            Questions, enquiries, or ready to start - we&rsquo;re here. Fill in
+            Questions, enquiries, or ready to start we&rsquo;re here. Fill in
             the form and we&rsquo;ll reach out within a few hours on business
             days.
           </p>
@@ -148,12 +148,12 @@ function ContactPage() {
             <ContactCard
               icon={<Mail className="size-5" />}
               label="Email"
-              value="contact@oncre.com"
+              value="Hello@getoncre.com"
             />
             <ContactCard
               icon={<MessageCircle className="size-5" />}
               label="WhatsApp"
-              value="+234 813 XXX XXXX"
+              value="+234 913 821 1627"
             />
             <ContactCard
               icon={<MapPin className="size-5" />}

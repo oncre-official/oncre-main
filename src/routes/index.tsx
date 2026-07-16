@@ -269,6 +269,44 @@ function HomePage() {
         </div>
       </section>
 
+      {/* BENEFITS */}
+      <section className="border-t border-border bg-brand-tint py-24">
+        <div className="container-page">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-widest text-brand">
+              Why OnCRE
+            </p>
+            <h2 className="mt-3 text-3xl font-bold text-navy sm:text-4xl">
+              Better recovery means a better business.
+            </h2>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "More Cash In. More Room for Growth.",
+                body: "Every payment that comes back is money you can put back to work. More capital in the business, More stock to move and more credit to offer.",
+              },
+              {
+                title: "Protect Trust While You Recover",
+                body: "The people who owe you are often people you know. We follow up in a way that gets results without damaging the relationship.",
+              },
+              {
+                title: "Focus on Your Business, Not Follow-Up",
+                body: "You didn't start your business to chase debt. Hand it over to us and get back to what actually matters.",
+              },
+            ].map((b, i) => (
+              <div key={i} className="rounded-2xl border border-border bg-background p-8 shadow-sm">
+                <h3 className="text-xl font-bold text-navy leading-snug">{b.title}</h3>
+                <p className="mt-4 text-muted-foreground leading-relaxed">
+                  {b.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* HOW IT WORKS */}
       <section className="relative overflow-hidden bg-navy py-24 text-navy-foreground">
         <div className="container-page relative">
@@ -437,8 +475,10 @@ const VIDEO_STORIES: VideoStory[] = [
     where: "Lagos",
     quote: "OnCRE recovered money I'd already written off.",
     poster:
-      fram1,
+      "https://img.youtube.com/vi/wshUOIBXjzk/maxresdefault.jpg",
+    videoUrl: "https://youtu.be/wshUOIBXjzk",
   },
+  /*
   {
     title: "From notebook chaos to one clean ledger",
     who: "Pharmacy owner",
@@ -455,6 +495,7 @@ const VIDEO_STORIES: VideoStory[] = [
     poster:
       fram3,
   },
+  */
 ];
 
 function RealResultsSection() {
@@ -492,7 +533,7 @@ function RealResultsSection() {
               {story.who} · {story.where}
             </figcaption>
 
-            <div className="mt-auto flex items-center gap-3 pt-8">
+            {/* <div className="mt-auto flex items-center gap-3 pt-8">
               <button
                 onClick={() => go(-1)}
                 aria-label="Previous story"
@@ -520,7 +561,7 @@ function RealResultsSection() {
                   />
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Video card side */}
@@ -569,7 +610,18 @@ function RealResultsSection() {
           >
             <div className="aspect-video w-full bg-black">
               {active.videoUrl ? (
-                <video src={active.videoUrl} controls autoPlay className="h-full w-full" />
+                active.videoUrl.includes("youtu") ? (
+                  <iframe
+                    src={active.videoUrl.replace("youtu.be/", "www.youtube.com/embed/").replace("youtube.com/watch?v=", "youtube.com/embed/") + (active.videoUrl.includes("?") ? "&autoplay=1" : "?autoplay=1")}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="h-full w-full"
+                  ></iframe>
+                ) : (
+                  <video src={active.videoUrl} controls autoPlay className="h-full w-full" />
+                )
               ) : (
                 <div className="grid h-full w-full place-items-center text-navy-foreground/60">
                   Video coming soon
@@ -632,7 +684,7 @@ function BlogSection() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-2">
           {BLOG_POSTS.slice(start, start + visible).map((post) => (
             <Link
               key={post.title}
@@ -670,7 +722,7 @@ function BlogSection() {
           ))}
         </div>
 
-        <div className="mt-8 flex items-center justify-end gap-3">
+        {/* <div className="mt-8 flex items-center justify-end gap-3">
           <button
             onClick={() => canPrev && setStart((s) => s - 1)}
             disabled={!canPrev}
@@ -687,7 +739,7 @@ function BlogSection() {
           >
             <ChevronRight className="size-4" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

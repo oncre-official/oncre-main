@@ -88,7 +88,7 @@ function LoginPage() {
           {/* Footer link */}
           <p className="mt-6 text-center text-sm text-muted-foreground">
             New to Oncre?{" "}
-            <Link to="/contact" className="font-semibold text-brand hover:underline">
+            <Link to="/signup" className="font-semibold text-brand hover:underline">
               Create an account
             </Link>
           </p>

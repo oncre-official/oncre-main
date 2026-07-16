@@ -155,7 +155,7 @@ function AboutPage() {
             </h2>
             <p className="mt-5 text-lg text-muted-foreground">
               A continent where credit is easier to extend, easier to manage,
-              and easier to repay - starting with Nigeria.
+              and easier to repay starting with Nigeria.
             </p>
           </div>
         </div>
@@ -207,7 +207,7 @@ function AboutPage() {
           </p>
           <blockquote className="mt-6 space-y-5 text-lg leading-relaxed text-muted-foreground">
             <p>
-              &ldquo;We listened to the real pain - not the theory of credit
+              &ldquo;We listened to the real pain not the theory of credit
               management, but the lived reality of someone who has ₦500,000
               outstanding and doesn&rsquo;t know how to get it back without
               damaging a relationship they&rsquo;ve built over years.
@@ -244,7 +244,7 @@ function AboutPage() {
             </h2>
             <p className="mt-4 max-w-xl text-lg text-muted-foreground">
               We&rsquo;re building the credit control layer for a market that
-              moves trillions of naira every year - almost entirely without the
+              moves trillions of naira every year almost entirely without the
               tools to manage it properly. If you see the opportunity,
               we&rsquo;d love to talk.
             </p>
