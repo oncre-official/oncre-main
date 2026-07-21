@@ -190,7 +190,7 @@ function TrackingPage() {
           <div className="space-y-4 text-lg text-muted-foreground">
             <p>
               OnCRE records every credit sale and sends professional payment
-              reminders to your customers via SMS and WhatsApp - automatically.
+              reminders to your customers via SMS and WhatsApp automatically.
               No awkward conversations. No manual follow-up. No lost records.
             </p>
             <p className="font-medium text-navy">

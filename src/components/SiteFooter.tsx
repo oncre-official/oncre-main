@@ -59,8 +59,8 @@ export function SiteFooter() {
                 Get in touch
               </h4>
               <ul className="space-y-4 text-sm text-white/70">
-                <li>contact@oncre.com</li>
-                <li>+234 813 XXX XXXX</li>
+                <li><a href="mailto:Hello@getoncre.com" className="hover:text-white transition-colors">Hello@getoncre.com</a></li>
+                <li><a href="https://wa.me/2349138211627" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp: +234 9138211627</a></li>
                 <li>Lagos, Nigeria</li>
               </ul>
             </div>
@@ -73,20 +73,20 @@ export function SiteFooter() {
             </div>
 
             <div className="flex items-center gap-4 rounded-full border border-white/20 px-5 py-2.5">
-              <a href="#" className="text-white hover:text-white/80 transition-colors">
+              <a href="https://www.instagram.com/getoncre?igsh=ZXNnZWwybjAzY2V2" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
                 <Instagram size={18} strokeWidth={1.5} />
               </a>
               <div className="w-[1px] h-4 bg-white/20"></div>
 
               {/* X / Twitter */}
-              <a href="#" className="text-white hover:text-white/80 transition-colors flex items-center justify-center w-[18px] h-[18px]">
+              <a href="https://x.com/getoncre?s=11&t=_W5_XMPnzdo86BieoFVtmQ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors flex items-center justify-center w-[18px] h-[18px]">
                 <svg width="14" height="14" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="currentColor" />
                 </svg>
               </a>
               <div className="w-[1px] h-4 bg-white/20"></div>
 
-              <a href="#" className="text-white hover:text-white/80 transition-colors">
+              <a href="https://www.linkedin.com/company/oncre/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
                 <Linkedin size={18} strokeWidth={1.5} />
               </a>
               <div className="w-[1px] h-4 bg-white/20"></div>
@@ -99,7 +99,7 @@ export function SiteFooter() {
               </a>
               <div className="w-[1px] h-4 bg-white/20"></div>
 
-              <a href="#" className="text-white hover:text-white/80 transition-colors">
+              <a href="mailto:Hello@getoncre.com" className="text-white hover:text-white/80 transition-colors">
                 <Mail size={18} strokeWidth={1.5} />
               </a>
             </div>
