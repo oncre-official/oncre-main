@@ -35,6 +35,7 @@ import step1 from "@/assets/step1.svg";
 import step2 from "@/assets/step2.svg";
 import step3 from "@/assets/step3.svg";
 import step4 from "@/assets/step4.svg";
+import videoThumnail from "@/assets/thumbnail.png";
 // import heroImg from "@/assets/hero.jpg";
 // import storyShopOwner from "@/assets/story-shop-owner.jpg";
 // import storyPharmacy from "@/assets/story-pharmacy.jpg";
@@ -576,14 +577,13 @@ function RealResultsSection() {
                   "radial-gradient(60% 60% at 30% 30%, oklch(0.45 0.22 265) 0%, oklch(0.29 0.11 264) 70%)",
               }}
             >
-              {story.poster && (
-                <img
-                  src={story.poster}
-                  alt=""
-                  className="absolute inset-0 h-full w-full object-cover opacity-70"
-                  loading="lazy"
-                />
-              )}
+
+              <img
+                src={videoThumnail}
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-70"
+                loading="lazy"
+              />
               <div className="absolute inset-0 grid place-items-center">
                 <span className="inline-flex size-16 items-center justify-center rounded-full bg-background/95 text-brand shadow-lg transition-transform group-hover:scale-110">
                   <Play className="size-7 translate-x-0.5" fill="currentColor" />
