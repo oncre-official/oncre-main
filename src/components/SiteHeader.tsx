@@ -257,7 +257,8 @@ export function SiteHeader() {
         {/* CTA */}
         <div className="hidden items-center gap-3 lg:flex">
           <Link
-            to="/login"
+            // to="/login"
+            to="/contact"
             className={cn(
               "rounded-md px-4 py-2 text-sm font-semibold transition-all duration-300",
               dark
